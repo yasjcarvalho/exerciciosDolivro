@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo 3.1</title>
+  </head>
+
+  <body>
+    <h1>Programa Situação do Aluno</h1>
+
+    <p>Nome: <input type="text" id="inNome" /></p>
+    <p>1º Nota: <input type="text" id="inNota1" /></p>
+    <p>2º Nota: <input type="text" id="inNota2" /></p>
+    <p>
+      <input type="button" value="Exibir Média e Situação" id="btResultado" />
+    </p>
+
+    <h3 id="outMedia"></h3>
+    <h3 id="outSituacao"></h3>
+  </body>
+
+  <script>
+    var inNome = document.getElementById('inNome')
+    var inNota1 = document.getElementById('inNota1')
+    var inNota2 = document.getElementById('inNota2')
+    var btResultado = document.getElementById('btResultado')
+    var outMedia = document.getElementById('outMedia')
+    var outSituacao = document.getElementById('outSituacao')
+
+    btResultado.addEventListener('click', calcularMedia)
+
+    function calcularMedia() {
+      //passo 1 - salvar entradas
+      var nome = inNome.value
+      var nota1 = Number(inNota1.value)
+      var nota2 = Number(inNota2.value)
+      //processamento
+      var media = (nota1 + nota2) / 2
+      //passo 3 - mostrar dados
+      outMedia.textContent = 'Média das notas ' + media.toFixed(1)
+      //if else
+      if (media >= 7) {
+        outSituacao.textContent = 'Parabéns, ' + nome + '! Você foi aprovado(a)'
+        outSituacao.style.color = 'blue'
+      } else {
+        outSituacao.textContent = 'Ops ' + nome + '... você foi reprovado(a)'
+        outSituacao.style.color = 'red'
+      }
+    }
+  </script>
+</html>
