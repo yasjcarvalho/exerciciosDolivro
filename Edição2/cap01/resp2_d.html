@@ -1,0 +1,26 @@
+<!-- Elaborar um programa para uma pizzaria, o qual leia o valor total de uma conta e quantos clientes vão pagá-la. Calcule e informe o valor a ser pago por cliente. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const conta = Number(prompt('Digite o valor da conta: '))
+      const clientes = Number(prompt('Digite o número de clientes: '))
+
+      const contaDividida = conta / clientes
+
+      alert(
+        `Valor da conta: ${conta.toFixed(
+          2
+        )} \n Número de Clientes: ${clientes}\n Valor por cliente: ${contaDividida.toFixed(
+          2
+        )}`
+      )
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!-- Elaborar um programa que leia 2 notas de um aluno em uma disciplina. Calcule e informe a média das notas.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const nota1 = Number(prompt('Digite a nota1: '))
+      const nota2 = Number(prompt('Digite a nota2: '))
+
+      const soma = nota1 + nota2
+      const media = soma / 2
+
+      alert(
+        `1ª nota: ${nota1.toFixed(1)} \n 2ª nota: ${nota2.toFixed(
+          1
+        )}\n Média: ${media.toFixed(1)}`
+      )
+    </script>
+  </body>
+</html>
