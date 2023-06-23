@@ -1,0 +1,22 @@
+<!-- Cálculo de duração de horas de uma viagem 
+  Elaborar um programa que leia a duração de uma viagem em dias e gors. Calcule e informe a duração total da viagem em número de horas.
+  Exemplo de dados de entrada e saída do program (para uma viagem que dura 2 dias + 5 horas).
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const dias = Number(prompt('Quantos dias: '))
+      const horas = Number(prompt('Quantas horas: '))
+
+      const total = horas + dias * 24
+
+      alert(`Nº Dias: ${dias}\n Nº Horas: ${horas} \n Total de horas: ${total}`)
+    </script>
+  </body>
+</html>
