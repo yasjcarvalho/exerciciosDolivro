@@ -10,7 +10,6 @@ frm.addEventListener('submit', e => {
   e.preventDefault() //evita envio do form
 })
 
-
 // const frm = document.querySelector("form")
 // const nome = frm.inNome.value
 
