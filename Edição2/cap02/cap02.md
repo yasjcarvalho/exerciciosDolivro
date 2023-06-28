@@ -48,6 +48,7 @@ Método: Representa uma instrução ou um conjunto de instruções que executam 
 Propriedade: Representa uma característica (atributo) de um objeto.
 
 ## Operadores aritiméticos e funções matemáticas (página 52)
+
 ```javascript
 const a = 5 % 2 // a = 1
 const b = 7 % 4 // b = 3
