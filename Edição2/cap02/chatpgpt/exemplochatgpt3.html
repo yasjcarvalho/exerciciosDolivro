@@ -1,0 +1,20 @@
+<!-- A propriedade value é usada principalmente em elementos de formulário, como input, textarea e select, para obter ou definir o valor do elemento. Ela permite acessar os dados inseridos ou selecionados pelo usuário. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="meuInput" value="Valor inicial" />
+    <script>
+      var input = document.getElementById('meuInput')
+      console.log(input.value) // Saída: "Valor inicial"
+
+      input.value = 'Novo valor'
+      console.log(input.value) // Saída: "Novo valor"
+    </script>
+  </body>
+</html>

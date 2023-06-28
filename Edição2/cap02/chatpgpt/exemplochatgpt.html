@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="meuParagrafo">Este é um <strong>exemplo</strong> de texto.</p>
+
+    <script>
+      var paragrafo = document.getElementById('meuParagrafo')
+      console.log(paragrafo.innerText) // Saída: "Este é um exemplo de texto."
+
+      paragrafo.innerText = 'Novo texto.'
+      console.log(paragrafo.innerText) // Saída: "Novo texto."
+    </script>
+  </body>
+</html>

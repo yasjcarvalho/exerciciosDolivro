@@ -7,7 +7,7 @@
 
 <!--
   vantagem:
-    querySelector() permite trablhar com tga name, id ou classe
+    querySelector() permite trablhar com tag name, id ou classe
   desvantagem:
     não é suportado para versões antigas de navegadores
       como superar essa desvantagem?
@@ -19,7 +19,7 @@
 
   Adicionando ouvinte a um elemento da página, utiliza-se o método addEventListener(), com o evento e o nome de uma função ou uma arrow function (função de seta) com os comandos a serem executados. Ex.:
 
-    frm.addEventListener("submmit, (e) => { comandos })
+    frm.addEventListener("submmit", (e) => { comandos })
 
 ## Propriedades innerText, innerHTML e value
 

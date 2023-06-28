@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="meuDiv">
+      <p>Este é um <strong>exemplo</strong> de conteúdo HTML.</p>
+    </div>
+
+    <script>
+      var div = document.getElementById('meuDiv')
+      console.log(div.innerHTML)
+      // Saída: "<p>Este é um <strong>exemplo</strong> de conteúdo HTML.</p>"
+
+      div.innerHTML = '<p>Novo conteúdo HTML.</p>'
+      console.log(div.innerHTML) // Saída: "<p>Novo conteúdo HTML.</p>"
+    </script>
+  </body>
+</html>
