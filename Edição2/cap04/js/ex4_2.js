@@ -19,5 +19,21 @@ frm.addEventListener('submit', e => {
   }
 
   //apresenta a resposta (altera o conteúdo do elemento h3 da página)
-  resp.innerText = `${nome}: Seu peso ideal é: ${peso.toFixed(3)} kg`
+  resp.innerText = `${nome}, seu peso ideal é: ${peso.toFixed(3)} kg`
+})
+
+//a condição poderia ter sido feita com const
+// if (masculino) {
+//   const peso = 22 * Math.pow(altura, 2)
+//   resp.innerText = `${nome}: Seu peso ideal é ${peso.toFixed(3)}`
+// } else {
+//   const peso = 21 * Math.pow(altura, 2)
+//   resp.innerText = `${nome}: Seu peso ideal é ${peso.toFixed(3)}`
+// }
+
+//a condição poderia ter sido feita com operador ternário
+// const peso = masculino ? 22 * Math.pow(altura, 2) : 21 * Math.pow(altura, 2)
+
+frm.addEventListener('reset', () => {
+  resp.innerText = '' //limpa o conteúdo do elemento h3 que exibe a resposta
 })
