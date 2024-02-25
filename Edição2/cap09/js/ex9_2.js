@@ -35,6 +35,8 @@ for (const inRadio of inRadios) {
   inRadio.addEventListener('change', trocarClube)
 }
 
+//na função abaixo se já tiver algum clube armazenado no localStorage então já inicie a estilização da página
+//com as cores armazenadas no Key e Value
 const verificarClube = () => {
   if (localStorage.getItem('clube')) {
     //se já estiver salvo algum clube
