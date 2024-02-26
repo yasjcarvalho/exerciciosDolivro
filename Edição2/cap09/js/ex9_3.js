@@ -96,6 +96,7 @@ frm.btVencedor.addEventListener("click", () => {
     for (let i = 0; i < nomes.length; i++) {
         // calcula a diferença de peso do "vencedor" e da aposta atual
         const difVencedor = Math.abs(vencedorPeso - pesoCorreto)
+        console.log(difVencedor)
         const difAposta = Math.abs(Number(pesos[i]) - pesoCorreto)
     
     //se a diferença da aposta atual (no for) for menor que a do "vencedor"
